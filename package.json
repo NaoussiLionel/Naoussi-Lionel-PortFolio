@@ -1,0 +1,12 @@
+{
+  "name": "structural-blueprint-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"dev":"next dev", "build":"next build", "start":"next start", "typecheck":"tsc --noEmit", "a11y":"pa11y-ci", "a11y:ci":"start-server-and-test start http://localhost:3000 a11y", "db:init":"node scripts/init-db.mjs", "auth:hash":"node scripts/hash-password.mjs"},
+  "dependencies": {"next":"^16.0.0","react":"^19.2.0","react-dom":"^19.2.0","@neondatabase/serverless":"^1.0.0","@vercel/blob":"^2.0.0","bcryptjs":"^3.0.0","jose":"^6.0.0","lucide-react":"^0.468.0"},
+  "devDependencies": {"typescript":"^5.9.0","@types/node":"^22.0.0","@types/react":"^19.0.0","@types/react-dom":"^19.0.0","pa11y-ci":"^5.0.0","start-server-and-test":"^3.0.13"},
+  "overrides": {
+    "@vercel/cli-config": "^0.3.7",
+    "zod": "^4.6.7"
+  }
+}
