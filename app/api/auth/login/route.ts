@@ -23,14 +23,17 @@ export async function POST(req: Request) {
       );
     }
 
+    const configuredEmail = expectedEmail as string;
+    const configuredHash = hash as string;
+
     const emailMatches =
       typeof email === 'string' &&
-      email.toLowerCase() === expectedEmail.toLowerCase();
+      email.toLowerCase() === configuredEmail.toLowerCase();
 
     const match =
       typeof password === 'string' &&
       password.length < 200 &&
-      await bcrypt.compare(password, hash);
+      await bcrypt.compare(password, configuredHash);
 
     if (!emailMatches || !match) {
       return NextResponse.json(
