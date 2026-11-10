@@ -11,7 +11,7 @@ export default async function Home(){const [settings,entries]=await Promise.all(
 <SiteHeader settings={settings}/>
 <main id="main"><section className="hero shell field-notebook-hero" id="home">
 <div className="hero-left">
-  <div className="editorial-masthead"><span>ISSUE NO. 01</span><span>THE STRUCTURAL ENGINEER</span><span>DOUALA / CAMEROON</span></div><div className="editorial-title">THE<br/>STRUCTURAL<br/><em>ENGINEER</em></div><div className="editorial-rule"/>
+  <div className="editorial-masthead"><span>ISSUE NO. 01</span><span>THE STRUCTURAL ENGINEER</span><span>DOUALA / CAMEROON</span></div><div className="editorial-title">THE<br/>STRUCTURAL<br/>ENGINEER</div><div className="editorial-rule"/>
   <div className="eyebrow"><span className="pulse-dot"/>{settings.eyebrow}</div><div className="editorial-kicker">A FIELD JOURNAL OF STRUCTURE, DETAIL &amp; BUILDING</div>
   <h1>{settings.tagline.split('\n').map((line,i,lines)=><span key={i}>{line}{i<lines.length-1&&<br/>}</span>)}</h1>
   <div className="editorial-byline">BY {settings.name.toUpperCase()} &nbsp; / &nbsp; STRUCTURAL ENGINEER</div>
