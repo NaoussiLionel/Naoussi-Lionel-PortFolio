@@ -1020,3 +1020,76 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .public-site .footer{
   background:#111111;
 }
+
+
+/* FINAL CLEANUP — NO RED CIRCLES, NO HANDWRITTEN/INK NOTES, NO PAPER BORDERS */
+.public-site .red-circle{
+  color:inherit !important;
+  background:none !important;
+  border:0 !important;
+  box-shadow:none !important;
+  text-decoration:none !important;
+  font-style:normal !important;
+  font-weight:inherit !important;
+  transform:none !important;
+}
+.public-site .annotation,
+.public-site .scribble,
+.public-site .technical-note,
+.public-site .timeline-note{
+  font-family:'JetBrains Mono',monospace !important;
+  font-style:normal !important;
+  font-weight:400 !important;
+  color:var(--ink) !important;
+  transform:none !important;
+  text-decoration:none !important;
+}
+.public-site .annotation{
+  font-size:8px !important;
+  letter-spacing:1px !important;
+  text-transform:uppercase !important;
+}
+.public-site .scribble{
+  font-size:8px !important;
+  letter-spacing:1px !important;
+  text-transform:uppercase !important;
+}
+.public-site .technical-note,
+.public-site .timeline-note{
+  font-size:8px !important;
+  letter-spacing:.8px !important;
+}
+.public-site .notebook-page,
+.public-site .project-card,
+.public-site .project-art,
+.public-site .about-visual,
+.public-site .contact-form-wrap{
+  border:0 !important;
+  box-shadow:none !important;
+}
+.public-site .notebook-media{
+  border:0 !important;
+}
+.public-site .project-view{
+  border:0 !important;
+}
+.public-site .section-count{
+  border:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.public-site .about-facts{
+  border-left:0 !important;
+  border-right:0 !important;
+}
+.public-site .service-grid{
+  border:0 !important;
+}
+.public-site .service-card{
+  border-right:0 !important;
+}
+.public-site .contact-form-wrap input,
+.public-site .contact-form-wrap textarea{
+  border-left:0 !important;
+  border-right:0 !important;
+}
