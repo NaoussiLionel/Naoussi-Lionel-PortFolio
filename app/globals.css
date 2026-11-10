@@ -54,6 +54,9 @@
 }
 
 *{box-sizing:border-box}
+/* Editorial type policy: no browser-default italics anywhere. */
+em{font-style:normal}
+.public-site em,.admin-app em,.admin-login em{font-style:normal}
 html{scroll-behavior:smooth}
 body{
   margin:0;
