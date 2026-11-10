@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
 :root{
   --color-page:#E8E3DA;
@@ -10,10 +10,11 @@
   --color-focus:#1A1614;
   --color-scrim:rgba(26,22,20,.55);
 
-  --font-display:'Playfair Display',Georgia,serif;
-  --font-body:'Source Serif 4',Georgia,serif;
+  --font-display:'Alta','Alta Regular',Georgia,serif;
+  --font-body:'DM Sans',Arial,sans-serif;
   --font-ui:'DM Sans',Arial,sans-serif;
   --font-mono:'DM Sans',Arial,sans-serif;
+  --font-tip:'Ink Free','InkFree','Comic Sans MS',cursive;
 
   --text-display-xl:clamp(3.75rem,8vw,8.5rem);
   --text-display-lg:clamp(2.75rem,5.5vw,5.75rem);
@@ -278,7 +279,7 @@ img{max-width:100%}
 .diagram-legend span{display:block;color:var(--color-ink-muted)}
 .diagram-coordinate{right:var(--space-4);bottom:var(--space-4)}
 .annotation,.scribble,.technical-note,.timeline-note{
-  font-family:var(--font-body);
+  font-family:var(--font-tip);
   font-style:normal;
   color:var(--color-ink);
 }
