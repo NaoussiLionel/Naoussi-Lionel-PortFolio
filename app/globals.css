@@ -971,3 +971,52 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   .public-site .skill-row{grid-template-columns:35px 1fr 20px}
   .public-site .skill-row>span:nth-child(3){display:none}
 }
+
+
+/* FINAL VISUAL CLEANUP — NO PAPER EFFECTS / NO ITALIC TITLES */
+.public-site{
+  --base:#ffffff;
+  --paper:#ffffff;
+  --paper-2:#f4f4f2;
+  --paper-3:#ffffff;
+  --ink:#111111;
+  --ink-soft:#666666;
+  background:#ffffff;
+  background-image:none;
+}
+.public-site .site-header{
+  background:#ffffff;
+  backdrop-filter:none;
+}
+.public-site .notebook-page{
+  background:#ffffff;
+}
+.public-site .notebook-media{
+  background:#f2f2f0;
+}
+.public-site .project-card,
+.public-site .contact-form-wrap{
+  background:#ffffff;
+}
+.public-site .project-art{
+  background:#f2f2f0;
+}
+.public-site .about-visual{
+  background:#f2f2f0;
+}
+.public-site .editorial-title em,
+.public-site .section-head h2 em,
+.public-site .about-copy h2 em,
+.public-site .timeline-grid h2 em,
+.public-site .contact-intro h2 em,
+.public-site .project-body h2 em{
+  font-style:normal;
+  font-weight:700;
+  color:inherit;
+}
+.public-site .editorial-title{
+  font-style:normal;
+}
+.public-site .footer{
+  background:#111111;
+}
