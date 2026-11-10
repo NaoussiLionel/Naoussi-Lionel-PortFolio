@@ -41,6 +41,20 @@ npm run auth:hash -- "your-unique-very-long-password"
 
 Copy the hash to `ADMIN_PASSWORD_HASH` in `.env.local`. Add `ADMIN_EMAIL` (your login email). Create `SESSION_SECRET` with `openssl rand -base64 48`; put it in `.env.local`. **Never commit the `.env.local` file.** Admin login uses email + password; nothing is hardcoded.
 
+## 3.1 Fixing “Admin credentials are not configured” on Vercel
+
+If `/admin` shows a 503 error with **Admin authentication is not configured**, the production deployment is missing one or more server-side environment variables.
+
+In **Vercel → Project → Settings → Environment Variables**, add these three variables for the **Production** environment:
+
+- `ADMIN_EMAIL` — the email you will use to sign in.
+- `ADMIN_PASSWORD_HASH` — the bcrypt hash generated locally with `npm run auth:hash -- "your-password"`.
+- `SESSION_SECRET` — a random secret of at least 32 characters; for example `openssl rand -base64 48`.
+
+Then **redeploy the latest commit**. Do not put the plain admin password in GitHub, `.env.example`, source code, or client-side code.
+
+The login endpoint now reports exactly which variable is missing, so a 503 can be diagnosed without exposing credentials.
+
 ## 4. Vercel Blob for images and PDFs
 
 1. Create a **public** Vercel Blob store and link it to this project.

@@ -454,3 +454,42 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 
 
+
+/* FIELD NOTEBOOK HERO — personal working notebook, not a generic blueprint */
+.field-notebook-hero{grid-template-columns:46% 54%;min-height:760px;padding-top:62px;align-items:stretch}
+.field-notebook-hero .hero-left{padding-top:0;padding-right:54px}
+.notebook-topline{display:flex;justify-content:space-between;gap:18px;padding-bottom:15px;margin-bottom:44px;border-bottom:1.5px dashed var(--ink);font:10px var(--font-label);letter-spacing:1.2px;color:var(--ink-soft)}
+.notebook-topline span:last-child{color:var(--pen-blue)}
+.field-notebook-hero .eyebrow{color:var(--pen-blue);font-family:var(--font-label)}
+.field-notebook-hero h1{font-family:var(--font-display);font-weight:400;letter-spacing:.5px;color:var(--ink);font-size:clamp(60px,7vw,108px);line-height:.92;margin:20px 0 18px}
+.field-notebook-hero h1 span:last-child{color:var(--pen-blue)}
+.hand-note{font-family:var(--font-hand);font-size:29px;color:var(--pen-red);transform:rotate(-4deg);margin:4px 0 20px 18px}
+.field-notebook-hero .hero-intro{color:var(--ink-blue);font-size:17px;line-height:1.85;max-width:500px}
+.field-notebook-hero .hero-bottom{padding-top:58px;color:var(--ink-soft);font-family:var(--font-label)}
+.field-notebook-hero .small-cross{color:var(--pen-red)}
+.notebook-page{background:var(--paper-3);border:2px solid var(--ink);border-radius:4px 7px 5px 6px;box-shadow:9px 10px 0 rgba(24,24,22,.09);min-height:640px;overflow:hidden;transform:rotate(.45deg);isolation:isolate}
+.notebook-page:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(35,81,140,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(35,81,140,.10) 1px,transparent 1px);background-size:28px 28px;opacity:.7}
+.notebook-rings{position:absolute;left:-13px;top:45px;bottom:45px;width:26px;display:flex;flex-direction:column;justify-content:space-between;z-index:6}
+.notebook-rings i{display:block;width:24px;height:10px;border:2px solid var(--ink);border-left:0;border-radius:0 9px 9px 0;background:#d7d0c0}
+.page-corner,.page-date,.page-coordinate,.page-caption{position:absolute;z-index:5;font:9px var(--font-label);letter-spacing:1px;color:var(--ink-soft)}
+.page-corner{top:24px;left:30px;color:var(--pen-red)}
+.page-date{top:24px;right:28px}
+.page-margin{position:absolute;left:47px;top:0;bottom:0;border-left:1px solid rgba(179,54,43,.28);z-index:2}
+.notebook-media{position:absolute;left:78px;right:45px;top:92px;bottom:92px;border:1.5px solid var(--ink);background:rgba(35,81,140,.04);overflow:hidden;display:grid;place-items:center;z-index:3}
+.notebook-media:after{content:'SKETCH / OBSERVATION';position:absolute;right:12px;bottom:10px;font:8px var(--font-label);color:var(--pen-blue);letter-spacing:1px}
+.notebook-media>img{object-fit:cover}
+.notebook-media .blueprint-svg{width:92%;height:92%;filter:none}
+.notebook-page .annotation{top:47%;right:4%;font-family:var(--font-hand);font-size:25px;color:var(--pen-red);transform:rotate(-7deg);z-index:7}
+.page-caption{left:78px;bottom:29px;color:var(--pen-blue)}
+.page-coordinate{right:28px;bottom:29px}
+.field-notebook-hero .primary-btn{background:var(--ink);border-color:var(--ink);color:var(--paper-3);border-radius:6px 10px 7px 9px}
+.field-notebook-hero .primary-btn:hover{background:var(--pen-blue);border-color:var(--pen-blue)}
+.field-notebook-hero .outline-btn{border:1.5px solid var(--ink);color:var(--ink);border-radius:6px 10px 7px 9px}
+.field-notebook-hero .outline-btn:hover{background:rgba(35,81,140,.08)}
+@media(max-width:800px){
+  .field-notebook-hero{grid-template-columns:1fr;padding-top:35px}
+  .field-notebook-hero .hero-left{padding-right:0}
+  .notebook-topline{margin-bottom:30px}
+  .notebook-page{min-height:520px;margin-top:30px;transform:rotate(0)}
+  .field-notebook-hero h1{font-size:clamp(50px,13vw,76px)}
+}
