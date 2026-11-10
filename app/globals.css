@@ -99,7 +99,7 @@ img{max-width:100%}
 .public-site .section-tinted>.shell{padding-block:var(--space-10)}
 .public-site .red-circle{
   color:inherit!important;
-  font-style:italic!important;
+  font-style:normal!important;
   text-decoration:underline;
   text-decoration-thickness:var(--rule-hair);
   text-underline-offset:.12em;
@@ -279,7 +279,7 @@ img{max-width:100%}
 .diagram-coordinate{right:var(--space-4);bottom:var(--space-4)}
 .annotation,.scribble,.technical-note,.timeline-note{
   font-family:var(--font-body);
-  font-style:italic;
+  font-style:normal;
   color:var(--color-ink);
 }
 .annotation{
@@ -324,9 +324,7 @@ img{max-width:100%}
   font:600 var(--text-display-md)/1 var(--font-display);
   letter-spacing:-.025em;
 }
-.section-head h2 em,.about-copy h2 em,.timeline-grid h2 em,.contact-intro h2 em,.project-body h2 em{
-  font-style:italic;
-}
+
 .section-head p,.contact-intro>p{
   max-width:38rem;
   margin:0;
@@ -817,7 +815,7 @@ img{max-width:100%}
 .login-logo span{font-family:var(--font-body)}
 .login-art>span,.login-index{font:700 var(--text-micro)/1.4 var(--font-ui);letter-spacing:.12em;text-transform:uppercase}
 .login-art h1{margin:var(--space-4) 0;font:600 clamp(3.5rem,6vw,6rem)/.9 var(--font-display);letter-spacing:-.03em}
-.login-art h1 em{font-style:italic}
+.login-art h1 em{font-style:normal}
 .login-art p{max-width:34rem;color:var(--color-card);opacity:.8;font-size:var(--text-body-lg);line-height:1.6}
 .login-index{margin-top:var(--space-8)}
 .login-form-col{display:grid;place-items:center;padding:var(--space-6);background:var(--color-page)}
